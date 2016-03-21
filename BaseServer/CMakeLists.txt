@@ -4,12 +4,12 @@ project(BaseServer)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 set(SOURCE_FILES
-        src/main.cpp
+        main.cpp
         src/NetworkManager.cpp
-        Client.cpp)
+        src/Client.cpp)
 
 set(INCLUDES
         src/NetworkManager.h
-        Client.h)
+        src/Client.h)
 
 add_executable(BaseServer ${SOURCE_FILES} ${INCLUDES})

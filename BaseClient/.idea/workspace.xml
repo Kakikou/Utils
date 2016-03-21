@@ -17,6 +17,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NetworkBuffer.h" afterPath="$PROJECT_DIR$/src/NetworkBuffer.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Protocol.h" afterPath="$PROJECT_DIR$/src/Protocol.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Socket.h" afterPath="$PROJECT_DIR$/src/Socket.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BaseServer/CMakeLists.txt" afterPath="$PROJECT_DIR$/../BaseServer/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BaseServer/Client.h" afterPath="$PROJECT_DIR$/../BaseServer/Client.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BaseServer/src/NetworkManager.h" afterPath="$PROJECT_DIR$/../BaseServer/src/NetworkManager.h" />
     </list>
