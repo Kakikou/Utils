@@ -10,6 +10,6 @@ set(SOURCE_FILES
 
 set(INCLUDES
         src/NetworkManager.h
-        src/Client.h)
+        src/Client.h src/Network/IMultiplexer.h src/Network/Select.cpp src/Network/Select.h)
 
 add_executable(BaseServer ${SOURCE_FILES} ${INCLUDES})

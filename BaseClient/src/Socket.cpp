@@ -9,9 +9,9 @@
 #include "Socket.h"
 
 #if defined(__APPLE__) || defined(__MACH__)
-#ifndef MSG_NOSIGNAL
-#define MSG_NOSIGNAL SO_NOSIGPIPE
-#endif
+# ifndef MSG_NOSIGNAL
+#  define MSG_NOSIGNAL SO_NOSIGPIPE
+# endif
 #endif
 
 Socket::Socket(const std::string &hostname, int port) : hostname(hostname), port(port) {
@@ -23,6 +23,7 @@ Socket::~Socket() {
 bool Socket::connectSocket() {
     struct sockaddr_in sin = {0};
     struct hostent *hostinfo = nullptr;
+
     this->sock = socket(AF_INET, SOCK_STREAM, 0);
     if (sock == -1) {
         perror("socket()");

@@ -4,13 +4,14 @@
 
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <stdlib.h>
-#include <sys/errno.h>
 #include <iostream>
 #include "NetworkManager.h"
+#include "Network/Select.h"
 
 NetworkManager::NetworkManager() {
-
+    multiplexer = new Network::Select();
+    multiplexer->initRead();
+    multiplexer->initWrite();
 }
 
 NetworkManager::~NetworkManager() {
@@ -33,32 +34,29 @@ void NetworkManager::setOnClientTalk(std::function<void(char *, int)> const &cli
 }
 
 int NetworkManager::process() {
-    FD_ZERO(&readFdSet);
-    FD_SET(STDIN_FILENO, &readFdSet);
-    FD_SET(mainSocket, &readFdSet);
+    multiplexer->reset();
+    multiplexer->addRead(STDIN_FILENO);
+    multiplexer->addRead(mainSocket);
 
     for (int socket : openedSocket) {
-        FD_SET(socket, &readFdSet);
+        multiplexer->addRead(socket);
     }
 
-    if (select(maxFd + 1, &readFdSet, nullptr, nullptr, nullptr) == -1) {
-        perror("select()");
-        return -1;
-    }
+    multiplexer->process();
 
-    if (FD_ISSET(STDIN_FILENO, &readFdSet)) {
+    if (multiplexer->issetReads(STDIN_FILENO)) {
         char buff[512];
         bzero(buff, 512);
         read(STDIN_FILENO, buff, 512);
     }
 
-    if (FD_ISSET(mainSocket, &readFdSet)) {
+    if (multiplexer->issetReads(mainSocket)) {
         int newConnexion = handleNewConnection();
         newClientCallback(newConnexion);
     }
 
     for (int socket : openedSocket) {
-        if (FD_ISSET(socket, &readFdSet)) {
+        if (multiplexer->issetReads(socket)) {
             char *buff = new char[512];
             bzero(buff, 512);
             ssize_t len = read(socket, buff, 512);

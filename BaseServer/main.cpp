@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "NetworkManager.h"
+#include "src/NetworkManager.h"
 
 #include <iostream>
 #include <list>

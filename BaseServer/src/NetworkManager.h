@@ -8,6 +8,7 @@
 
 #include <functional>
 #include <vector>
+#include "Network/IMultiplexer.h"
 
 class NetworkManager {
 public:
@@ -31,6 +32,8 @@ private:
     std::vector<int> openedSocket;
     std::function<void(int)> newClientCallback;
     std::function<void(char *, int)> clientTalk;
+
+    IMultiplexer *multiplexer;
 
     void resetMaxFd();
     int initMainSocket();
