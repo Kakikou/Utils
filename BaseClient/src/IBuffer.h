@@ -5,8 +5,8 @@
 #ifndef IBUFFER_H_
 #define IBUFFER_H_
 
-# include <string>
-# include <cstdint>
+#include <string>
+#include <cstdint>
 
 class IBuffer {
 public:
@@ -34,4 +34,4 @@ public:
     virtual IBuffer &operator>>(char &) = 0;
 };
 
-#endif /* !IBUFFER_H_ */
+#endif // IBUFFER_H_

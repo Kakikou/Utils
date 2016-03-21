@@ -2,11 +2,11 @@
 // Created by Kevin Rodrigues on 21/03/2016.
 //
 #ifndef NETWORKBUFFER_H_
-# define NETWORKBUFFER_H_
+#define NETWORKBUFFER_H_
 
-# include <iostream>
-# include <typeinfo>
-# include "IBuffer.h"
+#include <iostream>
+#include <typeinfo>
+#include "IBuffer.h"
 
 class NetworkBuffer : public IBuffer {
 public:
@@ -104,4 +104,4 @@ void NetworkBuffer::serialize<std::pair<void *, size_t>>(const std::pair<void *,
 template<>
 void NetworkBuffer::unserialize<std::string>(std::string &element);
 
-#endif /* !NETWORKBUFFER_H_ */
+#endif // NETWORKBUFFER_H_

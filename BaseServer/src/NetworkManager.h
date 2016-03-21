@@ -2,8 +2,8 @@
 // Created by Kevin Rodrigues on 17/03/2016.
 //
 
-#ifndef MOCKMARKETTEST_NETWORKMANAGER_H
-#define MOCKMARKETTEST_NETWORKMANAGER_H
+#ifndef NETWORKMANAGER_H
+#define NETWORKMANAGER_H
 
 
 #include <functional>
@@ -39,4 +39,4 @@ private:
 };
 
 
-#endif //MOCKMARKETTEST_NETWORKMANAGER_H
+#endif //NETWORKMANAGER_H

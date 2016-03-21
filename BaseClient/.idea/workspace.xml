@@ -13,10 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="083f7eeb-6ef8-4c06-abdd-b4a14edd68ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IBuffer.h" afterPath="$PROJECT_DIR$/src/IBuffer.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NetworkBuffer.h" afterPath="$PROJECT_DIR$/src/NetworkBuffer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BaseServer/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../BaseServer/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Protocol.h" afterPath="$PROJECT_DIR$/src/Protocol.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Socket.h" afterPath="$PROJECT_DIR$/src/Socket.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BaseServer/Client.h" afterPath="$PROJECT_DIR$/../BaseServer/Client.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BaseServer/src/NetworkManager.h" afterPath="$PROJECT_DIR$/../BaseServer/src/NetworkManager.h" />
     </list>
     <ignored path="MockMarketClient.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,9 +104,9 @@
             <entry file="file://$PROJECT_DIR$/src/Socket.h">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="2" />
+                  <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
                   <folding>
-                    <element signature="e#121#138#0" expanded="true" />
+                    <element signature="e#87#104#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -113,9 +115,11 @@
           <file leaf-file-name="IBuffer.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/IBuffer.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.09014423">
-                  <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-                  <folding />
+                <state vertical-scroll-proportion="0.64903843">
+                  <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="10" />
+                  <folding>
+                    <element signature="e#91#108#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -124,9 +128,10 @@
             <entry file="file://$PROJECT_DIR$/src/NetworkBuffer.h">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                  <caret line="106" column="26" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
                   <folding>
-                    <element signature="e#2855#2857#0" expanded="true" />
+                    <element signature="e#102#121#0" expanded="true" />
+                    <element signature="e#2851#2853#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -144,15 +149,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/Client.cpp" />
         <option value="$PROJECT_DIR$/src/Client.h" />
-        <option value="$PROJECT_DIR$/src/Socket.h" />
         <option value="$PROJECT_DIR$/src/Protocol/Protocol.h" />
         <option value="$PROJECT_DIR$/src/NetworkBuffer.cpp" />
-        <option value="$PROJECT_DIR$/src/Protocol.h" />
         <option value="$PROJECT_DIR$/src/Socket.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/src/NetworkBuffer.h" />
         <option value="$PROJECT_DIR$/src/IBuffer.h" />
+        <option value="$PROJECT_DIR$/src/NetworkBuffer.h" />
+        <option value="$PROJECT_DIR$/src/Socket.h" />
+        <option value="$PROJECT_DIR$/src/Protocol.h" />
       </list>
     </option>
   </component>
@@ -367,7 +372,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding>
-            <element signature="e#121#138#0" expanded="true" />
+            <element signature="e#87#104#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -377,7 +382,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2855#2857#0" expanded="true" />
+            <element signature="e#102#121#0" expanded="true" />
+            <element signature="e#2851#2853#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -424,7 +430,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding>
-            <element signature="e#121#138#0" expanded="true" />
+            <element signature="e#87#104#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -434,7 +440,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2855#2857#0" expanded="true" />
+            <element signature="e#102#121#0" expanded="true" />
+            <element signature="e#2851#2853#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -504,9 +511,10 @@
     <entry file="file://$PROJECT_DIR$/src/NetworkBuffer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="106" column="26" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
           <folding>
-            <element signature="e#2855#2857#0" expanded="true" />
+            <element signature="e#102#121#0" expanded="true" />
+            <element signature="e#2851#2853#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -514,18 +522,20 @@
     <entry file="file://$PROJECT_DIR$/src/Socket.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="2" />
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
           <folding>
-            <element signature="e#121#138#0" expanded="true" />
+            <element signature="e#87#104#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IBuffer.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09014423">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
+        <state vertical-scroll-proportion="0.64903843">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="10" />
+          <folding>
+            <element signature="e#91#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

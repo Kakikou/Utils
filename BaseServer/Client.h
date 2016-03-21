@@ -2,8 +2,8 @@
 // Created by Kevin Rodrigues on 15/03/2016.
 //
 
-#ifndef MOCKMARKETTEST_CLIENT_H
-#define MOCKMARKETTEST_CLIENT_H
+#ifndef CLIENT_H
+#define CLIENT_H
 
 
 class Client {
@@ -19,4 +19,4 @@ private:
 };
 
 
-#endif //MOCKMARKETTEST_CLIENT_H
+#endif //CLIENT_H

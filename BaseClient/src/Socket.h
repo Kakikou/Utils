@@ -2,8 +2,8 @@
 // Created by Kevin Rodrigues on 21/03/2016.
 //
 
-#ifndef MOCKMARKETCLIENT_CLIENT_H
-#define MOCKMARKETCLIENT_CLIENT_H
+#ifndef CLIENT_H
+#define CLIENT_H
 
 #include <string>
 #include "IBuffer.h"
@@ -25,4 +25,4 @@ private:
 };
 
 
-#endif //MOCKMARKETCLIENT_CLIENT_H
+#endif // CLIENT_H
