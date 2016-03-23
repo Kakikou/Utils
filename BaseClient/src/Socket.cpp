@@ -55,3 +55,7 @@ bool Socket::send(IBuffer &buff) {
 bool Socket::send(void *data, size_t size) {
     return ::send(this->sock, data, size, MSG_NOSIGNAL) > 0;
 }
+
+void Socket::close() {
+    ::close(this->sock);
+}

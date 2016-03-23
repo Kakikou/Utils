@@ -16,6 +16,7 @@ public:
     bool connectSocket();
     bool send(IBuffer &buff);
     bool send(void *data, size_t size);
+    void close();
 
 private:
     const int port;

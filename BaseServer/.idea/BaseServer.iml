@@ -2,13 +2,15 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/NetworkManager.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Network/Select.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Network/Select.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Network/Client.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Network/IMultiplexer.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/NetworkManager.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Client.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Client.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Server.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Network/Select.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Server.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Network/Select.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Network/NetworkManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Network/NetworkManager.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Network/Client.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>

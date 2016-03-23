@@ -11,9 +11,12 @@ int main() {
         std::string str;
         std::cin >> str;
 
-        Header header;
+        if (str == "1")
+            break;
+
+        Header header = { 0 };
         header.type = 12;
-        Data data;
+        Data data = { 0 };
         data.data[0] = 127;
 
         NetworkBuffer networkBuffer;
@@ -21,5 +24,6 @@ int main() {
         networkBuffer << std::make_pair(static_cast<void *>(&data), sizeof(data));
         socket.send(networkBuffer);
     }
+    socket.close();
     return 0;
 }

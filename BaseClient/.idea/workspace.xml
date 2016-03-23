@@ -13,19 +13,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="083f7eeb-6ef8-4c06-abdd-b4a14edd68ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BaseServer/src/Network/IMultiplexer.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BaseServer/src/Network/Select.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BaseServer/src/Network/Select.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BaseServer/src/Network/Client.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BaseServer/src/Network/Client.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BaseServer/src/Network/NetworkManager.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BaseServer/src/Network/NetworkManager.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BaseServer/src/Server.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BaseServer/src/Server.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BaseServer/src/Client.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BaseServer/src/Client.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BaseServer/src/NetworkManager.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BaseServer/src/NetworkManager.h" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Socket.cpp" afterPath="$PROJECT_DIR$/src/Socket.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Socket.h" afterPath="$PROJECT_DIR$/src/Socket.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BaseServer/.idea/BaseServer.iml" afterPath="$PROJECT_DIR$/../BaseServer/.idea/BaseServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BaseServer/.idea/misc.xml" afterPath="$PROJECT_DIR$/../BaseServer/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BaseServer/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../BaseServer/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BaseServer/CMakeLists.txt" afterPath="$PROJECT_DIR$/../BaseServer/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BaseServer/main.cpp" afterPath="$PROJECT_DIR$/../BaseServer/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BaseServer/src/NetworkManager.cpp" afterPath="$PROJECT_DIR$/../BaseServer/src/NetworkManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BaseServer/src/NetworkManager.h" afterPath="$PROJECT_DIR$/../BaseServer/src/NetworkManager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BaseServer/src/Network/Select.cpp" afterPath="$PROJECT_DIR$/../BaseServer/src/Network/Select.cpp" />
     </list>
     <ignored path="MockMarketClient.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,11 +67,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Socket.cpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Socket.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Socket.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="156">
-                  <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+                <state relative-caret-position="743">
+                  <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -81,11 +87,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                <state relative-caret-position="360">
+                  <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                   </folding>
@@ -107,11 +113,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Socket.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Socket.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Socket.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+                <state relative-caret-position="270">
+                  <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
                   <folding>
                     <element signature="e#87#104#0" expanded="true" />
                   </folding>
@@ -119,7 +125,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="IBuffer.h" pinned="false" current-in-tab="true">
+          <file leaf-file-name="IBuffer.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/IBuffer.h">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="555">
@@ -158,14 +164,14 @@
         <option value="$PROJECT_DIR$/src/Client.h" />
         <option value="$PROJECT_DIR$/src/Protocol/Protocol.h" />
         <option value="$PROJECT_DIR$/src/NetworkBuffer.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/src/IBuffer.h" />
         <option value="$PROJECT_DIR$/src/NetworkBuffer.h" />
-        <option value="$PROJECT_DIR$/src/Socket.h" />
         <option value="$PROJECT_DIR$/src/Protocol.h" />
         <option value="$PROJECT_DIR$/test/main.c" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/Socket.h" />
         <option value="$PROJECT_DIR$/src/Socket.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -175,9 +181,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1920" />
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="width" value="1920" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -459,18 +464,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20295984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15165877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295053" sideWeight="0.49605057" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32572114" sideWeight="0.48907682" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2393993" sideWeight="0.4870985" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32743362" sideWeight="0.48973143" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295053" sideWeight="0.49815693" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328125" sideWeight="0.50528544" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2393993" sideWeight="0.51290154" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328125" sideWeight="0.4947146" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.4947146" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39929327" sideWeight="0.49605057" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -717,16 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NetworkBuffer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
@@ -734,16 +729,6 @@
           <folding>
             <element signature="e#102#121#0" expanded="true" />
             <element signature="e#2851#2853#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Socket.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-          <folding>
-            <element signature="e#87#104#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -793,11 +778,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Socket.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="e#87#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Socket.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        <state relative-caret-position="743">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

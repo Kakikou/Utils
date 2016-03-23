@@ -75,5 +75,4 @@ namespace Network {
         fd_set_write = new fd_set();
         FD_ZERO(fd_set_write);
     }
-
 }
